@@ -76,12 +76,10 @@ nav li a:hover {
     background-color: #333;
     color: #fff;
 }
-
 .wrapper {
      background-color: #31ADE8;
      background-image: url("..//img/creampaper.png");
 }
-
 .topImage{
     background-image: url("..//img/classImage1.jpg");
     background-repeat: no-repeat;
@@ -111,11 +109,7 @@ nav li a:hover {
     float:left;
     width: 50%;
     margin-left: 25%;
-
-
-
 }
-
 .textblocks span{
     font-family: 'Rock Salt', cursive;
     font-size:3em;
@@ -127,12 +121,9 @@ nav li a:hover {
 .textblocks span:hover{
     color: #31ADE8;
 }
-
 .textblocks p{
-
     font-family: 'Roboto', sans-serif;
 }
-
 .question {
     background-color: #eee;
     color: #444;
@@ -144,15 +135,10 @@ nav li a:hover {
     transition: 0.5s;
     margin-bottom:10px;
     margin-left: 10px;
-
 }
-
-
 .question.active, .question:hover {
     background-color: #ddd;
 }
-
-
 .answer {
     padding: 0 18px;
     margin: 10px;
@@ -164,7 +150,6 @@ nav li a:hover {
     margin-bottom:10px;
     font-family: 'Roboto', sans-serif;
 }
-
 .answer.show {
     opacity: 1;
     max-height: 1000px;
