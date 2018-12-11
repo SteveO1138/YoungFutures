@@ -80,7 +80,6 @@ nav li a:hover {
 .wrapper {
      background-color: #31ADE8;
      background-image: url("..//img/creampaper.png");
-
 }
 
 .topImage{
@@ -95,14 +94,14 @@ nav li a:hover {
     color: white;
     text-align: center;
     font-size: 5em;
-
-
-
+    position: relative;
 }
-
-.topImage p{
-    margin-top:150px;
-
+.topImage h3{
+    position: absolute;
+    margin: 0;
+    right: 10%;
+    left: 10%;
+    bottom: 0;
 }
 .textblocks {
     font-family: 'Roboto', sans-serif;
