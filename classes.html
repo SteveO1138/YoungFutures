@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Young Futures Classes</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"> </script>
+</head>
+<body>
+    <nav>
+        <div class="innerNav">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">VOLUNTEER</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="topImage">
+            <h3>Young Futures History</h3>
+        </div>
+        <div class="intro">
+            <p>Urban Art is an initiative that Young Futures created to address the strong need to expose, educate, and promote a love for art to our inner-city youth.</p>
+            <p>The program gives kids an opportunity to share a first-hand account through pictures and videos of their growth and development as they explore the world of art and personal expression.</p>
+            <p>Each of the projects below enables the kids in our Urban Art program to experience art on a different level—tapping into our children’s creative side and allowing them to explore what art means to them is the most important thing we can bring to the table.
+            </p>
+        </div>
+        <section class="textblocks">
+            <ul class="question">
+                <span>A Night of Yoga</span>
+                <li class="answer">Kids in our community learn about the delicate art of yoga and its many forms. A trained professional introduces kids to the beginning stages of yoga while keeping a watchful eye over each child to help them appreciate this form of art. Yoga has no age or ability restriction, making it a perfect match to help our kids empower themselves.
+                </li>
+            </ul>
+        </section>
+    </div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".question").on('click',function() {
+        $(this).children(".answer").toggleClass("show");
+        $().toggleClass("active");
+    });
+});
+</script>
+</body>
+</html>
