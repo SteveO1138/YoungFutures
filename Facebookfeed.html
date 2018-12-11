@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"> </script>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+        $(function(){
+	var fbpage_id = "227244923982032";
+	var fbpage_feed = 'https://www.facebook.com/feeds/page.php?format=atom10&id=' + fbpage_id;
+	var feed_api = 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=' + encodeURIComponent(fbpage_feed);
+	$.getJSON(feed_api + '&callback=?', function(data){
+		$(data.responseData.feed.entries).each(function(index){
+			$('ul#update-feed').append($('<li />', {
+				'data-role': "list-divider"
+			}).append($('<a />', {
+				'href': this.link,
+				'data-transition': 'slide',
+				'html': this.contentSnippet
+			})));
+		});
+		//$('ul#update-feed').listview('refresh'); // for jQuery mobile
+	});
+})
+        </script>
+    </body>
+</html>
