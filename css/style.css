@@ -1,15 +1,20 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-}
-div,
-header,
-nav,
-footer,
-section {
-  float: left;
-  display: block;
-}
+
+
+
+/* RESET */
+
+/* ---------------------------- */
+
+*{box-sizing: border-box;}
+
+html,body{margin:0;}
+
+div,section,header,footer,nav{display:block;float:left;width:100%;position:relative;}
+
+/* ---------------------------- */
+
+
 body {
   margin: 0;
 }
@@ -195,4 +200,78 @@ nav li a:hover {
 .answer.show {
     opacity: 1;
     max-height: 3000px;
+}
+
+/* Upcoming Events Section */
+#EventWrapper{
+    position: relative;
+    width: 100%;
+    background-color: #31ADE8;
+    margin: 0;
+    font-size: 12px;
+    padding: 50px 30px;
+}
+
+#EventWrapper h2{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+#Eventwrapper ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    float:left;
+    display:block;
+    overflow: hidden;
+}
+
+#EventWrapper ul li div{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+     display: inline;
+     float: left;
+     width: 15%;
+
+ }
+
+.Event{
+    float:left;
+    width:100%;
+    display:block;
+    color:white;
+    padding:10px 0;
+    border-bottom: dotted 1px #777;
+}
+
+.Event:last-child{
+    border:none;
+}
+
+.Ename{
+    text-align: right;
+    min-width:50px;
+    width:auto;
+    margin: 0 20px 0 0;
+}
+
+
+.signup{
+    float:right;
+    display:block;
+    width:auto;
+    border-radius: 5px;
+    color:white;
+    background-color:#FF9207;
+}
+
+.Ename img{
+    width: 100px;
+    height: 100px;
+}
+
+.Edate{
+    margin-left: 5px;
 }
