@@ -1,23 +1,11 @@
 @charset "UTF-8";
-
-
-
 /* RESET */
-
 /* ---------------------------- */
-
 *{box-sizing: border-box;}
 
-html,body{margin:0;}
-
-div,section,header,footer,nav{display:block;float:left;width:100%;position:relative;}
-
 /* ---------------------------- */
-
-
-body {
-  margin: 0;
-}
+body{margin:0;}
+div,section,header,footer,nav{display:block;float:left;width:100%;position:relative;}
 p,
 h1,
 h2,
@@ -32,73 +20,83 @@ img {
 }
 header {
   width: 100%;
-  height: 144px;
+  height: 216px;
   padding: 5px;
-  margin: 0px;
+  margin: 42px 0px 0px 0px;
+  background-color: #fc9502;
   position: relative;
   z-index: 30;
 }
 .location {
-  width: 33%;
-  height: 100px;
+    width: 33%;
+    height: auto;
+    text-align: center;
 }
 .logo {
-  width: 33%;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 500px;
-  z-index: 40;
+    width: 33%;
+    height: auto;
+    z-index: 40;
+}
+.innerLogo {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
 }
 .logo img {
-  display: block;
-  width: 300px;
+    display: block;
+    width: 244px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
 }
 .social {
-  width: 33%;
-  height: 100px;
+    width: 33%;
+    height: auto;
+    text-align: center;
 }
 nav {
-  width: 100%;
-  height: 36px;
-  background-color: #31ade8;
-  font-size: 14px;
-  font-family: "Roboto Slab", serif;
+    width: 100%;
+    height: 42px;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
 }
 .innerNav {
-  width: 100%;
-  height: auto;
-  margin: auto;
+    float: none;
+    width: 67%;
+    height: 42px;
+    margin: 0 auto;
 }
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 nav li {
-  display: inline-block;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+    display: inline-block;
+    float: left;
+    width: 25%;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 nav li a {
-  display: block;
-  text-decoration: none;
-  width: 120px;
-  height: 36px;
-  padding: 10px;
-  color: #333;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    color: #333;
 }
 nav li a:hover {
-  background-color: #333;
-  color: #fff;
+    background-color: #333;
+    color: #fff;
 }
 .wrapper {
      background-color: #31ADE8;
      background-image: url("..//img/creampaper.png");
-
 }
 
 .topImage{
@@ -126,7 +124,11 @@ nav li a:hover {
 
 
 }
-
+.intro {
+    width: 75%;
+    border: 1px solid #555;
+    margin: 0 auto;
+}
 .textblocks {
     font-family: 'Roboto', sans-serif;
     margin: 5px;
