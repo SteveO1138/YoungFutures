@@ -14,28 +14,24 @@ h4,
 h5 {
   font-family: "Roboto Slab", serif;
 }
-
 img {
   width: 100%;
   height: auto;
 }
-
 header {
   width: 100%;
-  height: 216px;
+  height: 240px;
   padding: 5px;
   margin: 42px 0px 0px 0px;
   background-color: #fc9502;
   position: relative;
   z-index: 30;
 }
-
 .location {
     width: 33%;
     height: auto;
     text-align: center;
 }
-
 .logo {
     width: 33%;
     height: auto;
@@ -46,7 +42,6 @@ header {
     width: 90%;
     margin: 0 auto;
 }
-
 .logo img {
     display: block;
     width: 244px;
@@ -54,7 +49,6 @@ header {
     margin: auto;
     overflow: hidden;
 }
-
 .social {
     width: 33%;
     height: auto;
@@ -76,13 +70,11 @@ nav {
     height: 42px;
     margin: 0 auto;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 nav li {
     display: inline-block;
     float: left;
@@ -92,7 +84,6 @@ nav li {
     margin: 0;
     text-align: center;
 }
-
 nav li a {
     display: block;
     text-decoration: none;
@@ -101,17 +92,14 @@ nav li a {
     padding: 10px;
     color: #333;
 }
-
 nav li a:hover {
     background-color: #333;
     color: #fff;
 }
-
 .wrapper {
      background-color: #31ADE8;
      background-image: url("..//img/creampaper.png");
 }
-
 .topImage{
     background-image: url("..//img/classImage1.jpg");
     background-repeat: no-repeat;
@@ -122,7 +110,6 @@ nav li a:hover {
     width: 100%;
     height: 400px;
 }
-
 .topImage p{
     z-index: 30;
     margin-top:100px;
@@ -133,8 +120,16 @@ nav li a:hover {
 }
 .intro {
     width: 75%;
-    border: 1px solid #555;
-    margin: 0 auto;
+    height: auto;
+    margin-left: 10%;
+    padding: 20px 30px 10px 30px;
+    color: #f93800;
+    /* background-color: #fed900; */
+    border-top: 24px solid #31ADE8;
+}
+
+.intro p {
+    margin: 8px 0;
 }
 .textblocks {
     font-family: 'Roboto', sans-serif;
