@@ -100,6 +100,10 @@ nav li a:hover {
      background-color: #31ADE8;
      background-image: url("..//img/creampaper.png");
 }
+#wrapNoBkgrd {
+    background-color: inherit;
+    background-image:none;
+}
 .topImage{
     background-image: url("..//img/classImage1.jpg");
     background-repeat: no-repeat;
@@ -118,19 +122,6 @@ nav li a:hover {
     text-align: center;
     font-size: 5em;
 }
-.intro {
-    width: 75%;
-    height: auto;
-    margin-left: 10%;
-    padding: 20px 30px 10px 30px;
-    color: #f93800;
-    /* background-color: #fed900; */
-    border-top: 24px solid #31ADE8;
-}
-
-.intro p {
-    margin: 8px 0;
-}
 .textblocks {
     font-family: 'Roboto', sans-serif;
     margin: 5px;
@@ -139,7 +130,6 @@ nav li a:hover {
     width: 75%;
     margin-left: 10%;
 }
-
 .textblocks span{
     font-family: 'Rock Salt', cursive;
     font-size:2em;
@@ -157,7 +147,6 @@ nav li a:hover {
 .textblocks p{
     font-family: 'Roboto', sans-serif;
 }
-
 .question {
     background-image: url("..//img/YoungFuturesLogo.png");
     background-repeat: repeat;
@@ -175,11 +164,9 @@ nav li a:hover {
     margin-bottom:0px;
     margin-left: 0px;
 }
-
 .question.active, .question:hover {
     background-color: #308fe8;
 }
-
 .answer {
     padding: 0 18px;
     margin: 0px;
@@ -191,7 +178,6 @@ nav li a:hover {
     margin-bottom:10px;
     font-family: 'Roboto', sans-serif;
 }
-
 .answer.show {
     opacity: 1;
     max-height: 3000px;
@@ -212,12 +198,13 @@ nav li a:hover {
     color: white;
 }
 
-#Eventwrapper ul{
+#EventWrapper ul{
     list-style:none;
     padding:0;
     margin:0;
     float:left;
     display:block;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -230,7 +217,6 @@ nav li a:hover {
      float: left;
      width: 15%;
  }
-
 .Event{
     float:left;
     width:100%;
@@ -239,7 +225,6 @@ nav li a:hover {
     padding:10px 0;
     border-bottom: dotted 1px #777;
 }
-
 .Event:last-child{
     border:none;
 }
@@ -267,6 +252,7 @@ nav li a:hover {
 
 .Edate{
     margin-left: 5px;
+    padding-left: 15px;
 }
 
 /**
@@ -462,4 +448,43 @@ nav li a:hover {
   z-index: 1;
   height: 100%;
   width: 100%;
+}
+
+/*--STYLES FOR CLASS DESCRIPTION DROPDOWN PANELS  */
+.accordion {
+    /* float:none; */
+    width: 25%;
+    /* margin: 0 auto; */
+    margin: 10px 20px;
+}
+.accordion-header {
+    padding:10px;
+    background-color: inherit;
+    border-bottom: 1px solid #fff;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: #31ADE8;
+    cursor: pointer;
+}
+.accordion-header::after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+.accordion-header:hover {
+    background-color: #31ADE8;
+    color: #fff;
+}
+.accordion-header:hover::after {
+    content: "\02796"; /* Unicode character for "minus" sign (-) */
+}
+.accordion-content {
+    display: none;
+    padding: 12px;
+    color: #31ADE8;
+    font-size: .875em;
+    line-height: 1.5em;
+    font-family: sans-serif;
 }
