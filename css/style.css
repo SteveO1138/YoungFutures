@@ -1,23 +1,11 @@
 @charset "UTF-8";
-
-
-
 /* RESET */
-
 /* ---------------------------- */
-
 *{box-sizing: border-box;}
 
-html,body{margin:0;}
-
-div,section,header,footer,nav{display:block;float:left;width:100%;position:relative;}
-
 /* ---------------------------- */
-
-
-body {
-  margin: 0;
-}
+body{margin:0;}
+div,section,header,footer,nav{display:block;float:left;width:100%;position:relative;}
 p,
 h1,
 h2,
@@ -32,75 +20,90 @@ img {
 }
 header {
   width: 100%;
-  height: 144px;
+  height: 240px;
   padding: 5px;
-  margin: 0px;
+  margin: 42px 0px 0px 0px;
+  background-color: #fc9502;
   position: relative;
   z-index: 30;
 }
 .location {
-  width: 33%;
-  height: 100px;
+    width: 33%;
+    height: auto;
+    text-align: center;
 }
 .logo {
-  width: 33%;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 500px;
-  z-index: 40;
+    width: 33%;
+    height: auto;
+    z-index: 40;
+}
+.innerLogo {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
 }
 .logo img {
-  display: block;
-  width: 300px;
+    display: block;
+    width: 244px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
 }
 .social {
-  width: 33%;
-  height: 100px;
+    width: 33%;
+    height: auto;
+    text-align: center;
 }
+
 nav {
-  width: 100%;
-  height: 36px;
-  background-color: #31ade8;
-  font-size: 14px;
-  font-family: "Roboto Slab", serif;
+    width: 100%;
+    height: 42px;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
 }
+
 .innerNav {
-  width: 100%;
-  height: auto;
-  margin: auto;
+    float: none;
+    width: 67%;
+    height: 42px;
+    margin: 0 auto;
 }
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 nav li {
-  display: inline-block;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+    display: inline-block;
+    float: left;
+    width: 25%;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 nav li a {
-  display: block;
-  text-decoration: none;
-  width: 120px;
-  height: 36px;
-  padding: 10px;
-  color: #333;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    color: #333;
 }
 nav li a:hover {
-  background-color: #333;
-  color: #fff;
+    background-color: #333;
+    color: #fff;
 }
 .wrapper {
      background-color: #31ADE8;
      background-image: url("..//img/creampaper.png");
-
 }
-
+#wrapNoBkgrd {
+    background-color: inherit;
+    background-image:none;
+}
 .topImage{
     background-image: url("..//img/classImage1.jpg");
     background-repeat: no-repeat;
@@ -110,12 +113,7 @@ nav li a:hover {
     background-blend-mode: overlay;
     width: 100%;
     height: 400px;
-
-
-
-
 }
-
 .topImage p{
     z-index: 30;
     margin-top:100px;
@@ -123,10 +121,7 @@ nav li a:hover {
     color: white;
     text-align: center;
     font-size: 5em;
-
-
 }
-
 .textblocks {
     font-family: 'Roboto', sans-serif;
     margin: 5px;
@@ -134,11 +129,7 @@ nav li a:hover {
     float:left;
     width: 75%;
     margin-left: 10%;
-
-
-
 }
-
 .textblocks span{
     font-family: 'Rock Salt', cursive;
     font-size:2em;
@@ -153,15 +144,11 @@ nav li a:hover {
 .textblocks span:hover{
     color: #31ADE8;
 }
-
 .textblocks p{
-
     font-family: 'Roboto', sans-serif;
 }
-
 .question {
     background-image: url("..//img/YoungFuturesLogo.png");
-
     background-repeat: repeat;
     background-position:top;
     background-size:contain;
@@ -176,15 +163,10 @@ nav li a:hover {
     transition: 0.5s;
     margin-bottom:0px;
     margin-left: 0px;
-
 }
-
-
 .question.active, .question:hover {
     background-color: #308fe8;
 }
-
-
 .answer {
     padding: 0 18px;
     margin: 0px;
@@ -196,7 +178,6 @@ nav li a:hover {
     margin-bottom:10px;
     font-family: 'Roboto', sans-serif;
 }
-
 .answer.show {
     opacity: 1;
     max-height: 3000px;
@@ -219,12 +200,13 @@ nav li a:hover {
     text-align: center;
 }
 
-#Eventwrapper ul{
+#EventWrapper ul{
     list-style:none;
     padding:0;
     margin:0;
     float:left;
     display:block;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -236,9 +218,7 @@ nav li a:hover {
      display: inline;
      float: left;
      width: 15%;
-
  }
-
 .Event{
     float:left;
     width:100%;
@@ -247,7 +227,6 @@ nav li a:hover {
     padding:10px 0;
     border-bottom: dotted 1px #777;
 }
-
 .Event:last-child{
     border:none;
 }
@@ -258,7 +237,6 @@ nav li a:hover {
     width:auto;
     margin: 0 20px 0 0;
 }
-
 
 .signup{
     float:right;
@@ -276,6 +254,241 @@ nav li a:hover {
 
 .Edate{
     margin-left: 5px;
+    padding-left: 15px;
+}
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-wrapper,
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; }
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /** This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong calculation of the height of the owl-item that breaks page layouts */ }
+  .owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity 400ms ease; }
+  .owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
+    max-height: 0; }
+  .owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d;
+}
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+      transform: scale(1.3, 1.3);
+ }
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/*--STYLES FOR CLASS DESCRIPTION DROPDOWN PANELS  */
+.accordion {
+    /* float:none; */
+    width: 25%;
+    /* margin: 0 auto; */
+    margin: 10px 20px;
+}
+.accordion-header {
+    padding:10px;
+    background-color: inherit;
+    border-bottom: 1px solid #fff;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: #31ADE8;
+    cursor: pointer;
+}
+.accordion-header::after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+.accordion-header:hover {
+    background-color: #31ADE8;
+    color: #fff;
+}
+.accordion-header:hover::after {
+    content: "\02796"; /* Unicode character for "minus" sign (-) */
+}
+.accordion-content {
+    display: none;
+    padding: 12px;
+    color: #31ADE8;
+    font-size: .875em;
+    line-height: 1.5em;
+    font-family: sans-serif;
 }
 
 /* Calendar */

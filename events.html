@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Young Futures Events</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="innerNav">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">VOLUNTEER</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--OPENING TAG FOR WRAPPER, CLOSES AT BOTTOM OF PAGE  -->
+    <div class="wrapper" id="wrapNoBkgrd">
+        <div class="topImage"> <p>Young Futures<br>Events</p>  </div>
+        <div class="accordion">
+            <div class="accordion-header">Intro to Classes</div>
+            <div class="accordion-content">
+                <p>Urban Art is an initiative that Young Futures created to address the strong need to expose, educate, and promote a love for art to our inner-city youth.
+                </p>
+                <p>The program gives kids an opportunity to share a first-hand account through pictures and videos of their growth and development as they explore the world of art and personal expression.
+                </p>
+                <p>Each of the projects below enables the kids in our Urban Art program to experience art on a different level—tapping into our children’s creative side and allowing them to explore what art means to them is the most important thing we can bring to the table.
+                </p>
+            </div>
+            <div class="accordion-header">A Night of Yoga</div>
+                <div class="accordion-content">
+                    Kids in our community learn about the delicate art of yoga and its many forms. A trained professional introduces kids to the beginning stages of yoga while keeping a watchful eye over each child to help them appreciate this form of art. Yoga has no age or ability restriction, making it a perfect match to help our kids empower themselves.
+                </div>
+            <div class="accordion-header">Candles with Kids</div>
+                <div class="accordion-content">
+                    This project blends the art of aromatherapy with the art of candle making. Our instructor educates the kids about the benefits of aromatherapy and the art of how to make candles using scents they pick or create. As the kids explore this form of art, we teach them the skills to educate other on this artform, allowing them to use art to empower others.
+                </div>
+            <div class="accordion-header">Fun with Soap</div>
+                <div class="accordion-content">
+                    We use this project to show our kids that we can incorporate art into everyday products, encouraging them to become creators. Kids create their own soap—picking the color, picking molds, picking the scents, and carving their designs out of the soaps.
+                </div>
+            <div class="accordion-header">Urban Jewels</div>
+                <div class="accordion-content">
+                    Jewelry making in our community dates back to as far as we can remember. This project explores beading including an experienced jewelry maker sharing the variations and techniques used in the art
+                </div>
+        </div>
+<!--DIV FOR EVENTS HTML -->
+<div class="">
+    <!--Kishon, I put this div here just as a starting point for you. Your code should show up to the right of the class description dropdown panels. Notice that the accordion is 25% width with margin: 10px 20px. So, you have 75% width to contain the events calendar/list. We can change margins if desired.-->
+</div>
+<!--SCRIPT FOR DROPDOWN PANELS  -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".accordion").on("click", ".accordion-header", function() {
+            $(this).toggleClass(".active").next().slideToggle();
+        });
+     });
+</script>
+<!--END OF SCRIPT-->
+<!--CLOSING TAG FOR WRAPPER  -->
+</div>
+</body>
+</html>
