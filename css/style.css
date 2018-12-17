@@ -25,6 +25,10 @@ img {
   width: 100%;
   height: auto;
 }
+
+a:link, a:visited{
+    text-decoration: none;
+}
 header {
   width: 100%;
   height: 144px;
@@ -90,7 +94,7 @@ nav li a:hover {
   background-color: #333;
   color: #fff;
 }
-.wrapper {
+.Aboutwrapper {
      background-color: #31ADE8;
      background-image: url("..//img/creampaper.png");
 
@@ -106,10 +110,176 @@ nav li a:hover {
     width: 100%;
     height: 400px;
 
+}
+
+.CTA{
+    display:block;
+    float: left;
+    max-width:100%;
+    padding: 10px;
+    background-color: white;
+    margin-left: 10%;
+
+}
+
+.CTAChild{
+    font-family: 'Roboto Slab', serif;
 
 
 
 }
+#CTALeft {
+    width: 25%;
+    margin:10px;
+}
+#LeftTop {
+    background-image: url("..//img/YoungFuturesLogo.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-color: #31ADE8;
+    background-blend-mode: overlay;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    background-position: center;
+    margin: 10px;
+    transition: 0.9s ease-in-out;
+
+
+}
+
+
+#leftBottom{
+    background-image: url("..//img/Yf_OurStoryCTA.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color: #31ADE8;
+    background-blend-mode: overlay;
+    height: 200px;
+    width: 300px;
+    text-align: right;
+    background-position: center;
+    margin: 10px;
+
+
+}
+
+
+#LeftTop span{
+    display: block;
+    color: white;
+    font-size:3em;
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 50px;
+    -webkit-transition: color 800ms ease-out;
+    -moz-transition:color 800ms  ease-out;
+    -o-transition: color 800ms  ease-out;
+    transition: color 800ms  ease-out;
+
+}
+#LeftTop span:hover {
+    color: #e86200;
+    cursor: pointer;
+
+}
+
+#leftBottom span{
+    display: block;
+    color: white;
+    font-size:3em;
+    text-align: right;
+    padding-top: 75px;
+    padding-right: 40px;
+    -webkit-transition: color 800ms ease-out;
+    -moz-transition:color 800ms ease-out;
+    -o-transition: color 800ms ease-out;
+    transition: color 800ms ease-out;
+}
+
+
+
+#leftBottom span:hover {
+    color: #e86200;
+    cursor: pointer;
+
+}
+
+
+#CTACenter{
+    background-image: url("..//img/classImage1.jpg");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:cover;
+    background-color: #fc9502;
+    background-blend-mode: overlay;
+    width: 350px;
+    height: 425px;
+    margin: 20px;
+    display: block;
+    float: left;
+
+}
+
+#CTACenter p{
+    display: block;
+    color: white;
+    font-size:3em;
+    text-align: center;
+    padding-top: 75px;
+    padding-right: 40px;
+
+
+}
+
+#CTACenter p:hover {
+    color: #31ADE8;
+    cursor: pointer;
+    -webkit-transition: color 800ms ease-out;
+    -moz-transition:color 800ms ease-out;
+    -o-transition: color 800ms ease-out;
+    transition: color 800ms ease-out;
+
+
+}
+
+
+#CTARight {
+    background-image: url("..//img/Yf-VolCTA.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color: #31ADE8;
+    background-blend-mode: overlay;
+    height: 425px;
+    width: 300px;
+    text-align: right;
+    background-position: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+
+}
+
+#CTARight p{
+    display: block;
+    color: white;
+    font-size:3em;
+    text-align: center;
+    -webkit-transition: color 800ms ease-out;
+    -moz-transition:color 800ms  ease-out;
+    -o-transition: color 800ms  ease-out;
+    transition: color 800ms  ease-out;
+
+}
+
+#CTARight p:hover{
+    color: #e86200;
+    cursor: pointer;
+
+
+}
+
 
 .topImage p{
     z-index: 30;
@@ -195,4 +365,9 @@ nav li a:hover {
 .answer.show {
     opacity: 1;
     max-height: 3000px;
+}
+
+.answer img{
+    width: 300px;
+    height: auto;
 }
