@@ -1,11 +1,24 @@
 @charset "UTF-8";
 /* RESET */
 /* ---------------------------- */
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 /* ---------------------------- */
-body{margin:0;}
-div,section,header,footer,nav{display:block;float:left;width:100%;position:relative;}
+body {
+  margin: 0;
+}
+div,
+section,
+header,
+footer,
+nav {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+}
 p,
 h1,
 h2,
@@ -19,8 +32,9 @@ img {
   height: auto;
 }
 
-a:link, a:visited{
-    text-decoration: none;
+a:link,
+a:visited {
+  text-decoration: none;
 }
 header {
   width: 100%;
@@ -32,333 +46,386 @@ header {
   z-index: 30;
 }
 .location {
-    width: 33%;
-    height: auto;
-    text-align: center;
+  width: 33%;
+  height: auto;
+  text-align: center;
 }
 .logo {
-    width: 33%;
-    height: auto;
-    z-index: 40;
+  width: 33%;
+  height: auto;
+  z-index: 40;
 }
 .innerLogo {
-    float: none;
-    width: 90%;
-    margin: 0 auto;
+  float: none;
+  width: 90%;
+  margin: 0 auto;
 }
 .logo img {
-    display: block;
-    width: 244px;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
+  display: block;
+  width: 244px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
 }
 .social {
-    width: 33%;
-    height: auto;
-    text-align: center;
+  width: 33%;
+  height: auto;
+  text-align: center;
 }
 
 nav {
-    width: 100%;
-    height: 42px;
-    background-color: #fff;
-    font-size: 18px;
-    font-family: "Roboto Slab", serif;
-    font-weight: bold;
+  width: 100%;
+  height: 42px;
+  background-color: #fff;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
 }
 
 .innerNav {
-    float: none;
-    width: 80%;
-    height: 42px;
-    margin: 0 auto;
+  float: none;
+  width: 80%;
+  height: 42px;
+  margin: 0 auto;
 }
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 nav li {
-    display: inline-block;
-    float: left;
-    width: 25%;
-    height: 42px;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  display: inline-block;
+  float: left;
+  width: 25%;
+  height: 42px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 nav li a {
-    display: block;
-    text-decoration: none;
-    width: 100%;
-    height: 42px;
-    padding: 10px;
-    color: #333;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 42px;
+  padding: 10px;
+  color: #333;
 }
 nav li a:hover {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 .Aboutwrapper {
-     background-color: #31ADE8;
-     background-image: url("..//img/creampaper.png");
+  background-color: #31ade8;
+  background-image: url("..//img/creampaper.png");
 }
 #wrapNoBkgrd {
-    background-color: inherit;
-    background-image:none;
+  background-color: inherit;
+  background-image: none;
 }
-.topImage{
-    background-image: url("..//img/classImage1.jpg");
-    background-repeat: no-repeat;
-    background-position:top;
-    background-size:cover;
-    background-color: #fc9502;
-    background-blend-mode: overlay;
-    width: 100%;
-    height: 400px;
-
-}
-
-.CTA{
-    display:block;
-    float: left;
-    max-width:100%;
-    padding: 10px;
-    background-color: white;
-    margin-left: 10%;
-
+.topImage {
+  background-image: url("..//img/classImage1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: #fc9502;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 400px;
 }
 
-.CTAChild{
-    font-family: 'Roboto Slab', serif;
+.CTA {
+  display: block;
+  float: left;
+  max-width: 100%;
+  padding: 10px;
+  background-color: white;
+  margin-left: 10%;
+}
 
-
-
+.CTAChild {
+  font-family: "Roboto Slab", serif;
 }
 #CTALeft {
-    width: 25%;
-    margin:10px;
+  width: 25%;
+  margin: 10px;
 }
 #LeftTop {
-    background-image: url("..//img/YoungFuturesLogo.png");
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-color: #31ADE8;
-    background-blend-mode: overlay;
-    height: 200px;
-    width: 300px;
-    text-align: center;
-    background-position: center;
-    margin: 10px;
-    transition: 0.9s ease-in-out;
-
-
+  background-image: url("..//img/YoungFuturesLogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #31ade8;
+  background-blend-mode: overlay;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  background-position: center;
+  margin: 10px;
+  transition: 0.9s ease-in-out;
 }
 
-
-#leftBottom{
-    background-image: url("..//img/Yf_OurStoryCTA.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-color: #31ADE8;
-    background-blend-mode: overlay;
-    height: 200px;
-    width: 300px;
-    text-align: right;
-    background-position: center;
-    margin: 10px;
-
-
+#leftBottom {
+  background-image: url("..//img/Yf_OurStoryCTA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #31ade8;
+  background-blend-mode: overlay;
+  height: 200px;
+  width: 300px;
+  text-align: right;
+  background-position: center;
+  margin: 10px;
 }
 
-
-#LeftTop span{
-    display: block;
-    color: white;
-    font-size:3em;
-    text-align: right;
-    padding-top: 100px;
-    padding-right: 50px;
-    -webkit-transition: color 800ms ease-out;
-    -moz-transition:color 800ms  ease-out;
-    -o-transition: color 800ms  ease-out;
-    transition: color 800ms  ease-out;
-
+#LeftTop span {
+  display: block;
+  color: white;
+  font-size: 3em;
+  text-align: right;
+  padding-top: 100px;
+  padding-right: 50px;
+  -webkit-transition: color 800ms ease-out;
+  -moz-transition: color 800ms ease-out;
+  -o-transition: color 800ms ease-out;
+  transition: color 800ms ease-out;
 }
 #LeftTop span:hover {
-    color: #e86200;
-    cursor: pointer;
-
+  color: #e86200;
+  cursor: pointer;
 }
 
-#leftBottom span{
-    display: block;
-    color: white;
-    font-size:3em;
-    text-align: right;
-    padding-top: 75px;
-    padding-right: 40px;
-    -webkit-transition: color 800ms ease-out;
-    -moz-transition:color 800ms ease-out;
-    -o-transition: color 800ms ease-out;
-    transition: color 800ms ease-out;
+#leftBottom span {
+  display: block;
+  color: white;
+  font-size: 3em;
+  text-align: right;
+  padding-top: 75px;
+  padding-right: 40px;
+  -webkit-transition: color 800ms ease-out;
+  -moz-transition: color 800ms ease-out;
+  -o-transition: color 800ms ease-out;
+  transition: color 800ms ease-out;
 }
-
-
 
 #leftBottom span:hover {
-    color: #e86200;
-    cursor: pointer;
-
+  color: #e86200;
+  cursor: pointer;
 }
 
-
-#CTACenter{
-    background-image: url("..//img/classImage1.jpg");
-    background-repeat: no-repeat;
-    background-position:top;
-    background-size:cover;
-    background-color: #fc9502;
-    background-blend-mode: overlay;
-    width: 350px;
-    height: 425px;
-    margin: 20px;
-    display: block;
-    float: left;
-
+#CTACenter {
+  background-image: url("..//img/classImage1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: #fc9502;
+  background-blend-mode: overlay;
+  width: 350px;
+  height: 425px;
+  margin: 20px;
+  display: block;
+  float: left;
 }
 
-#CTACenter p{
-    display: block;
-    color: white;
-    font-size:3em;
-    text-align: center;
-    padding-top: 75px;
-    padding-right: 40px;
-
-
+#CTACenter p {
+  display: block;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 75px;
+  padding-right: 40px;
 }
 
 #CTACenter p:hover {
-    color: #31ADE8;
-    cursor: pointer;
-    -webkit-transition: color 800ms ease-out;
-    -moz-transition:color 800ms ease-out;
-    -o-transition: color 800ms ease-out;
-    transition: color 800ms ease-out;
-
-
+  color: #31ade8;
+  cursor: pointer;
+  -webkit-transition: color 800ms ease-out;
+  -moz-transition: color 800ms ease-out;
+  -o-transition: color 800ms ease-out;
+  transition: color 800ms ease-out;
 }
-
 
 #CTARight {
-    background-image: url("..//img/Yf-VolCTA.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-color: #31ADE8;
-    background-blend-mode: overlay;
-    height: 425px;
-    width: 300px;
-    text-align: right;
-    background-position: center;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-
+  background-image: url("..//img/Yf-VolCTA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #31ade8;
+  background-blend-mode: overlay;
+  height: 425px;
+  width: 300px;
+  text-align: right;
+  background-position: center;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
 }
 
-#CTARight p{
-    display: block;
-    color: white;
-    font-size:3em;
-    text-align: center;
-    -webkit-transition: color 800ms ease-out;
-    -moz-transition:color 800ms  ease-out;
-    -o-transition: color 800ms  ease-out;
-    transition: color 800ms  ease-out;
-
+#CTARight p {
+  display: block;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  -webkit-transition: color 800ms ease-out;
+  -moz-transition: color 800ms ease-out;
+  -o-transition: color 800ms ease-out;
+  transition: color 800ms ease-out;
 }
 
-#CTARight p:hover{
-    color: #e86200;
-    cursor: pointer;
-
-
+#CTARight p:hover {
+  color: #e86200;
+  cursor: pointer;
 }
 
-
-.topImage p{
-    z-index: 30;
-    margin-top:100px;
-    font-family: 'Roboto Slab', serif;
-    color: white;
-    text-align: center;
-    font-size: 5em;
+.topImage p {
+  z-index: 30;
+  margin-top: 100px;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  text-align: center;
+  font-size: 5em;
 }
 .textblocks {
-    font-family: 'Roboto', sans-serif;
-    margin: 5px;
-    padding: 5px;
-    float:left;
-    width: 75%;
-    margin-left: 10%;
+  font-family: "Roboto", sans-serif;
+  margin: 5px;
+  padding: 5px;
+  float: left;
+  width: 75%;
+  margin-left: 10%;
 }
-.textblocks span{
-    font-family: 'Rock Salt', cursive;
-    font-size:2em;
-    display: block;
-    text-align: left;
-    color: #fc9502;
-    padding:20px;
-    width: 60%;
-    background-color: #ffff;
-    border-radius: 0px 50px 0px 0px
+.textblocks span {
+  font-family: "Rock Salt", cursive;
+  font-size: 2em;
+  display: block;
+  text-align: left;
+  color: #fc9502;
+  padding: 20px;
+  width: 60%;
+  background-color: #ffff;
+  border-radius: 0px 50px 0px 0px;
 }
-.textblocks span:hover{
-    color: #31ADE8;
+.textblocks span:hover {
+  color: #31ade8;
 }
-.textblocks p{
-    font-family: 'Roboto', sans-serif;
+.textblocks p {
+  font-family: "Roboto", sans-serif;
 }
 .question {
-    background-image: url("..//img/YoungFuturesLogo.png");
-    background-repeat: repeat;
-    background-position:top;
-    background-size:contain;
-    background-color: #31ADE8;
-    background-blend-mode: overlay;
-    color: #444;
-    cursor: pointer;
-    padding: 0px;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.5s;
-    margin-bottom:0px;
-    margin-left: 0px;
+  background-image: url("..//img/YoungFuturesLogo.png");
+  background-repeat: repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: #31ade8;
+  background-blend-mode: overlay;
+  color: #444;
+  cursor: pointer;
+  padding: 0px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
-.question.active, .question:hover {
-    background-color: #308fe8;
+.question.active,
+.question:hover {
+  background-color: #308fe8;
 }
 .answer {
-    padding: 0 18px;
-    margin: 0px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.9s ease-in-out;
-    opacity: 0;
-    margin-bottom:10px;
-    font-family: 'Roboto', sans-serif;
+  padding: 0 18px;
+  margin: 0px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.9s ease-in-out;
+  opacity: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 .answer.show {
-    opacity: 1;
-    max-height: 3000px;
+  opacity: 1;
+  max-height: 3000px;
 }
 
-.answer img{
-    width: 300px;
-    height: auto;
+.answer img {
+  width: 300px;
+  height: auto;
+}
+
+/* ------------------------------------- Donate ---------------------------------------------- */
+
+.innerDonate {
+  height: 300px;
+  /* background-color: rgba(252, 149, 2, 0.7); */
+  clear: both;
+  position: relative;
+  opacity: 0.5;
+}
+
+.innerDonate:hover {
+  opacity: 0.8;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  overflow: hidden;
+  color: #fff;
+}
+
+.innerDonate a {
+  color: #e86200;
+}
+
+.innerDonate a:hover {
+  color: #31ade8;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.innerDonate h1 {
+  font-size: 400%;
+  position: absolute;
+  top: 30px;
+  left: 520px;
+}
+
+.innerDonate h3 {
+  font-size: 200%;
+  position: absolute;
+  top: 150px;
+  left: 120px;
+}
+
+.innerDonate .left {
+  float: left;
+  width: 55%;
+}
+
+.innerDonate .right {
+  float: right;
+  width: 44%;
+}
+
+/* ------------------------------------- Footer --------------------------------------------- */
+
+footer {
+  color: #fff;
+  background-color: #fc9502;
+  min-height: 180px;
+  padding: 50px 80px;
+}
+
+footer .social {
+  float: left;
+  width: 30%;
+  border-right: 3px solid;
+  padding-right: 30px;
+}
+
+footer .info {
+  float: right;
+  width: 70%;
+  padding-left: 30px;
 }
