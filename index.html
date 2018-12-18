@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -5,48 +6,62 @@
     <title>Young Futures</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link
-    href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700"
-    rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <header>
-        <div class="location"><!-- text? image? --></div>
+        <div class="location"><!-- text? image? --> LOCATION IMAGE/TEXT</div>
         <div class="logo">
-            <img
-            src="img/YoungFuturesLogo.png"
-            alt="Young Futures logo"
-            width="469px"
-            height="457px"
-            />
+            <div class="innerLogo">
+                <img src="img/YoungFuturesLogo.png" alt="Young Futures logo" width="469px" height="457px"/>
+            </div>
         </div>
-        <div class="social"><!-- SOCIAL MEDIA ICON LINKS --></div>
+        <div class="social"><!-- SOCIAL MEDIA ICON LINKS -->SOCIAL MEDIA ICON LINKS</div>
     </header>
     <nav>
         <div class="innerNav">
             <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="#">EVENTS</a></li>
-                <li><a href="#">VOLUNTEER</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="about.html">ABOUT <i class="fas fa-caret-right fa-lg"></i></a></li>
+                <li><a href="#">EVENTS <i class="fas fa-caret-right fa-lg"></i></a></li>
+                <li><a href="#">OUR ART <i class="fas fa-caret-right fa-lg"></i></a></li>
+                <li><a href="#">WORK WITH US <i class="fas fa-caret-right fa-lg"></i></a></li>
             </ul>
         </div>
-    </nav>h
+    </nav>
+
     <div class="wrapper">
         <div class="carousel">
             <!-- CAROUSEL LIES BEHIND MESSAGE DIV -->
-            <div class="message"><!-- MESSAGE LAYS ON TOP OF CAROUSEL --></div>
+            <div class="message">Young Futures provides youth and families with an innovative artistic outlet, centered on fostering positive social development and educational growth by offering a therapeutic environment for the entire family.</div>
         </div>
     </div>
+
     <div class="wrapper">
-        <div class="left" id=" ">
-            <!-- background image placed on class 'left' -->
-            <div class="inner"><!-- TEXT CONTACT --></div>
-            <div class="inner"><!-- TEXT OUR STORY --></div>
+        <div class="CTA">
+            <div class="CTAChild" id="CTALeft">
+                <div class="CTAChild" id="LeftTop"><a href="#"><span>CONTACT</span></a></div>
+                <div class="CTAChild" id="leftBottom"><a href="about.html"><span>OUR<br>STORY</span></div></a>
+            </div>
+            <div class="CTAChild"  id="CTACenter"><a href="#"><p>CALENDAR OF UPCOMING EVENTS</p></a></div>
+            <div class="CTAChild" id="CTARight"><a href="#"><p>VOLUNTEER</p></a></div>
+
         </div>
-        <div class="middle">
-            <!-- background image placed on class 'middle' -->
+    <div class="wrapper">
+        <div class="innerMission"><!-- DESCRIPTION OF YF --></div>
+        <!-- DONATE -->
+        <div class="innerDonate">
+            <a href="#">
+                <h1>DONATE</h1>
+            <h3>HELP MAKE OUR COMMUNITY STRONGER WITH ART AND POSITIVITY!</h3>
+            <img class="left" src="../YoungFutures/img/donate-bg-img1.jpg" alt="Donate">
+            <img class="right" src="../YoungFutures/img/donate-bg-img2.jpg" alt="Donate">
+            </a>
+        </div>
+        <div class="innerCall"><!-- WHY TO DONATE --></div>
+    </div>
+
             <div id="EventWrapper">
                 <!-- TEXT CALENDER ... -->
                 <h2><ins>UPCOMING EVENTS<ins></h2>
@@ -75,23 +90,18 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="right">
-            <!-- background image placed on class 'right' -->
-            <div class="inner"><!-- VOLUNTEER --></div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="innerMission"><!-- DESCRIPTION OF YF --></div>
-        <div class="innerDonate"><!-- DONATE --></div>
-        <div class="innerCall"><!-- WHY TO DONATE --></div>
-    </div>
-    <div class="wrapper">
-        <div class="events"><!-- UPCOMING EVENTS AND SIGN UP BUTTONS --></div>
-    </div>
     <footer>
-        <div class="social"><!-- SOCIAL MEDIA ICON LINKS --></div>
-        <div class="info"><!-- PHONE NUMBER, ETC --></div>
+        <!-- SOCIAL MEDIA ICON LINKS -->
+        <div class="social">
+            <H3>SOCIAL MIDEA ICON LINKS</H3>
+            <P>(ABOUT 30% OF THE WHOLE WIDTH OF THE FOOTER AREA?)</P>
+        </div>
+        <!-- PHONE NUMBER, ETC -->
+        <div class="info">
+            <H2>YOUNG FUTURES</H2>
+            <P>(518) 505-4671</P>
+            <P> &copy;2018 </P>
+        </div>
     </footer>
 </body>
 </html>
