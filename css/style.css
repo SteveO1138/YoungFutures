@@ -137,7 +137,7 @@ nav li a:hover {
   background-color: #fc9502;
   background-blend-mode: overlay;
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
 
 .artPageImage {
@@ -378,7 +378,7 @@ nav li a:hover {
 
 .topImage p {
   z-index: 30;
-  margin-top: 100px;
+  margin-top: 40px;
   font-family: "Roboto Slab", serif;
   color: white;
   text-align: center;
@@ -546,11 +546,6 @@ footer .info {
   width: 70%;
   padding-left: 30px;
 }
-
-
-
-
-
 
 
 /**
@@ -785,4 +780,17 @@ footer .info {
     font-size: .875em;
     line-height: 1.5em;
     font-family: sans-serif;
+}
+.signUp {
+    width: 25%;
+    height: auto;
+    margin: 10px 20px;
+    padding: 10px;
+    border: 1px solid #777;
+}
+.signUp h3 {
+    margin: 0 0 10px 0;
+}
+.classElement {
+    margin-bottom: 12px;
 }
