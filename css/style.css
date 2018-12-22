@@ -30,6 +30,7 @@ h5 {
 img {
   width: 100%;
   height: auto;
+  opacity: .8;
 }
 
 a:link,
@@ -79,7 +80,7 @@ nav {
   width: 100%;
   height: 42px;
   background-color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
 }
@@ -105,7 +106,7 @@ nav li {
   text-align: center;
 }
 nav li.active {
-  background-color: #B9B9B9;
+  border-bottom: 4px solid;
 }
 nav li a {
   display: block;
@@ -119,6 +120,21 @@ nav li a:hover {
   background-color: #333;
   color: #fff;
 }
+
+/* Mission statement */
+
+.mission {
+    background-color: #fc9502;
+    height: 100px;
+}
+
+.mission p{
+    color: white;
+    width: 80%;
+    padding-left: 10%;
+}
+
+
 
 .Aboutwrapper {
   background-color: #31ade8;
@@ -165,12 +181,6 @@ nav li a:hover {
 #CTALeft {
   width: 25%;
   margin: 10px;
-}
-
-/*-------------------------- Carousel --------------------------*/
-
-.Carousel {
-    width: 80%;
 }
 
 /* --------------------------Upcoming Events Section--------------------------*/
@@ -227,7 +237,6 @@ nav li a:hover {
     width:auto;
     margin: 0 20px 0 0;
 }
-
 
 .signup{
     float:right;
@@ -546,12 +555,30 @@ footer .info {
   padding-left: 30px;
 }
 
+/* ---------------------------------------- Carousel----------------------------------------  */
 
-/**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
+ .Carousel{
+    width: 100%;
+ }
+
+ #carousel-img1{
+     background-image: url("..//img/YF_bracelets.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: #31ade8;
+     background-blend-mode: overlay;
+     height: 600px;
+     width: 1500px;
+     text-align: right;
+     background-position: center;
+ }
+
+ /**
+  * Owl Carousel v2.3.4
+  * Copyright 2013-2018 David Deutsch
+  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+  */
+
 .owl-carousel {
   display: none;
   width: 100%;
