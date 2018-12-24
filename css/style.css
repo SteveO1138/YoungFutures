@@ -90,6 +90,11 @@ nav {
   height: 42px;
   margin: 0 auto;
 }
+
+.fas.fa-bars{
+    display: none;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -160,6 +165,7 @@ nav li a:hover {
     margin: 0;
     font-size: 17px;
     padding: 50px 30px;
+    text-align: center;
 }
 
 #EventWrapper h2{
