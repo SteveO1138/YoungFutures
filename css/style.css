@@ -826,3 +826,55 @@ footer .info {
 .classElement {
     margin-bottom: 12px;
 }
+ /*********************** Calendar for evnts page **************************/
+.events-calendar{
+    list-style: none;
+    width: 70%;
+    font-family: "Roboto Slab";
+    margin: 15px;
+    padding: 15px;
+}
+
+
+.month {
+   padding: 70px 25px;
+   width: 100%;
+   background-image: url("..//img/YF-calendar-pic-3.jpg");
+   text-align: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: #31ade8;
+   background-blend-mode: overlay;
+   color: white;
+   font-size: 20px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   border: 1px solid black;
+ }
+
+table, th, td{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 17px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tr, th, td{
+    padding: 15px;
+}
+
+th{
+    background-color: #fc9502;
+
+}
+
+td{
+    background-color:  #ddd;
+}
+
+td:hover{
+    background: white;
+}
