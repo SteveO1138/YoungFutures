@@ -188,6 +188,21 @@ nav li a:hover {
   margin: 10px;
 }
 
+.aboutImage{
+    margin-top: 10px;
+    background-image: url("..//img/YF_jamesandmichael.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: #31ADE8;
+    background-blend-mode: overlay;
+    width: 75%;
+    margin-left:10%;
+    height: 400px;
+    text-align: center;
+    color: #fff;
+}
+
 /* --------------------------Upcoming Events Section--------------------------*/
 #EventWrapper{
     position: relative;
@@ -412,7 +427,6 @@ nav li a:hover {
   display: block;
   text-align: left;
   color: #fc9502;
-  padding: 20px;
   width: 60%;
   background-color: #ffff;
   border-radius: 0px 50px 0px 0px;
