@@ -560,11 +560,14 @@ footer .info {
 }
 
 /* ---------------------------------------- Carousel----------------------------------------  */
+/*
+Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
 
  .Carousel{
-    width: 100%;
+    width: 80%;
  }
 
+/* carousel on main page */
  #carousel-img1{
      background-image: url("..//img/YF_bracelets.png");
      background-repeat: no-repeat;
@@ -625,7 +628,8 @@ footer .info {
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 300px;}
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }
