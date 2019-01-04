@@ -401,8 +401,8 @@ nav li a:hover {
 }
 
 #CTARight p:hover {
-  color: #e86200;
-  cursor: pointer;
+    color: #e86200;
+    cursor: pointer;
 }
 
 .topImage p {
@@ -482,73 +482,53 @@ nav li a:hover {
 /* ------------------------------------- Donate ---------------------------------------------- */
 
 .innerDonate {
-  height: 300px;
-  /* background-color: rgba(252, 149, 2, 0.7); */
-  clear: both;
-  position: relative;
-  opacity: 0.5;
-  margin-bottom: 100px;
+  background-image: url("..//img/donate-bg-img1.jpg"),url("..//img/donate-bg-img2.jpg");
+  background-repeat: no-repeat;
+  background-position:left,right;
+  background-size: contain;
+  background-color: #31ade8;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 425px;
+  display: block;
+  float: left;
 }
 
-.innerDonate:hover {
-  opacity: 0.8;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  overflow: hidden;
-  color: #fff;
-}
-
-.innerDonate a {
-  color: #e86200;
-}
-
-.innerDonate a:hover {
-  color: #31ade8;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-}
 
 .innerDonate h1 {
-  font-size: 400%;
-  position: absolute;
-  top: 30px;
-  left: 520px;
+  font-size: 10em;
+  text-align: center;
+  color: white;
+  margin-bottom: 0px;
+  -webkit-transition: color 800ms ease-out;
+  -moz-transition: color 800ms ease-out;
+  -o-transition: color 800ms ease-out;
+  transition: color 800ms ease-out;
+
+}
+.innerDonate h1:hover{
+    color: #e86200;
+    cursor: pointer;
+
+
 }
 
 .innerDonate h3 {
-  font-size: 200%;
-  position: absolute;
-  top: 150px;
-  left: 120px;
-}
-
-.innerDonate .left {
-  float: left;
-  width: 55%;
-}
-
-.innerDonate .right {
-  float: right;
-  width: 44%;
-}
-
-.innerCall {
-    position: relative;
-    padding: 20px 40px;
-    margin-left: 20px;
-    margin-bottom: 100px;
-    background-color: #fc9502;
-    opacity: 0.8;
-    background-blend-mode: overlay;
-    font-family: "Roboto Slab", serif;
+    font-size: 2em;
+    text-align: center;
     color: white;
-    max-width: 1400px;
+    font-family: "Rock Salt", cursive;
+
+
+}
+.innerCall{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: block;
+    background-color: #fc9502;
+    padding: 10px;
+
+
 }
 
 
