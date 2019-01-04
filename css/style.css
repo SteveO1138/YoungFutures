@@ -277,6 +277,10 @@ nav li a:hover {
     margin-left: 5px;
 }
 
+.blueBackground{
+    background-color: #e86200;
+}
+
 
 /*-------------------------- CTA Section --------------------------*/
 #LeftTop {
@@ -820,7 +824,9 @@ footer .info {
 .classElement {
     margin-bottom: 12px;
 }
- /*********************** Calendar for evnts page **************************/
+
+
+ /*********************** Calendar for events page **************************/
 .events-calendar{
     list-style: none;
     width: 70%;
