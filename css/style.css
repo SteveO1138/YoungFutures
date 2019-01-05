@@ -553,8 +553,12 @@ footer .info {
   float: right;
   width: 70%;
   padding-left: 30px;
+ 
 }
-
+.social i{
+    font-size: 5em;
+    padding:5px;
+}
 /* ---------------------------------------- Carousel----------------------------------------  */
 
  .Carousel{
