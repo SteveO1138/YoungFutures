@@ -864,12 +864,23 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
 
  /*********************** Calendar for events page **************************/
 .events-calendar{
-    list-style: none;
-    width: 70%;
-    font-family: "Roboto Slab";
-    margin: 15px;
-    padding: 15px;
+list-style: none;
+width: 80%;
+font-family: "Roboto Slab";
+margin-left: 10%;
+padding: 10px;
+background-color: white;
 }
+
+.calLogo{
+    background-image: url("..//img/YoungFuturesLogo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    width:400px;
+    height:400px;
+}
+
+
 
 
 .month {

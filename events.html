@@ -15,7 +15,7 @@
         <div class="innerNav">
             <ul>
                 <li><a href="#">ABOUT <i class="fas fa-caret-right fa-lg"></i></a></li>
-                <li><a href="#">EVENTS <i class="fas fa-caret-right fa-lg"></i></a></li>
+                <li><a href="events.html">EVENTS <i class="fas fa-caret-right fa-lg"></i></a></li>
                 <li><a href="#">WORK WITH US <i class="fas fa-caret-right fa-lg"></i></a></li>
                 <li><a href="#">OUR ART <i class="fas fa-caret-right fa-lg"></i></a></li>
                 <li><a href="#">CONTACT <i class="fas fa-caret-right fa-lg"></i></a></li>
@@ -25,6 +25,72 @@
     <!--OPENING TAG FOR WRAPPER, CLOSES AT BOTTOM OF PAGE  -->
     <div class="wrapper" id="wrapNoBkgrd">
         <div class="topImage"> <p>Young Futures Events</p>  </div>
+        <div class="events-calendar">
+        <!--Kishon, I put this div here just as a starting point for you. Your code should show up to the right of the class description dropdown panels. Notice that the accordion is 25% width with margin: 10px 20px. So, you have 75% width to contain the events calendar/list. We can change margins if desired.-->
+            <div class="month">
+              <strong>January</strong><br>
+              <span style="font-size:60px"><strong>2019</strong></span>
+        </div>
+        <table>
+            <tr class="weekdays">
+              <th>Mo</th>
+              <th>Tu</th>
+              <th>We</th>
+              <th>Th</th>
+              <th>Fr</th>
+              <th>Sa</th>
+              <th>Su</th>
+          </tr>
+          <tr class='days'>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td id="hidden-num">5<i class="fas fa-calendar-day"></i><div id="reveal-event">Art & Sole: Paint'n Play <br>2 PM</div></td>
+              <td>6</td>
+          </tr>
+          <tr class='days'>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+          </tr>
+          <tr class='days'>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+          </tr>
+          <tr class='days'>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+          </tr>
+          <tr class='days'>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+              <td>31</td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr id='Event-key'>
+            <td colspan="7"><i class="fas fa-calendar-day"><span>Monthly Event</span></td>
+          </tr>
+
+        </table>
         <div class="accordion">
             <div class="accordion-header">Intro to Classes</div>
             <div class="accordion-content">
@@ -48,110 +114,47 @@
                     We use this project to show our kids that we can incorporate art into everyday products, encouraging them to become creators. Kids create their own soap—picking the color, picking molds, picking the scents, and carving their designs out of the soaps.
                 </div>
             <div class="accordion-header">Urban Jewels</div>
-                <div class="accordion-content">
-                    Jewelry making in our community dates back to as far as we can remember. This project explores beading including an experienced jewelry maker sharing the variations and techniques used in the art
-                </div>
+            <div class="accordion-content">
+                Jewelry making in our community dates back to as far as we can remember. This project explores beading including an experienced jewelry maker sharing the variations and techniques used in the art
+            </div>
         </div>
-<!--DIV FOR EVENTS HTML -->
-    <div class="events-calendar">
-    <!--Kishon, I put this div here just as a starting point for you. Your code should show up to the right of the class description dropdown panels. Notice that the accordion is 25% width with margin: 10px 20px. So, you have 75% width to contain the events calendar/list. We can change margins if desired.-->
-        <div class="month">
-          <strong>January</strong><br>
-          <span style="font-size:60px"><strong>2019</strong></span>
-    </div>
-    <table>
-        <tr class="weekdays">
-          <th>Mo</th>
-          <th>Tu</th>
-          <th>We</th>
-          <th>Th</th>
-          <th>Fr</th>
-          <th>Sa</th>
-          <th>Su</th>
-      </tr>
-      <tr class='days'>
-          <td></td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td id="hidden-num">5<i class="fas fa-calendar-day"></i><div id="reveal-event">Art & Sole: Paint'n Play <br>2 PM</div></td>
-          <td>6</td>
-      </tr>
-      <tr class='days'>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>10</td>
-          <td>11</td>
-          <td>12</td>
-          <td>13</td>
-      </tr>
-      <tr class='days'>
-          <td>14</td>
-          <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
-          <td>19</td>
-          <td>20</td>
-      </tr>
-      <tr class='days'>
-          <td>21</td>
-          <td>22</td>
-          <td>23</td>
-          <td>24</td>
-          <td>25</td>
-          <td>26</td>
-          <td>27</td>
-      </tr>
-      <tr class='days'>
-          <td>28</td>
-          <td>29</td>
-          <td>30</td>
-          <td>31</td>
-          <td></td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr id='Event-key'>
-        <td colspan="7"><i class="fas fa-calendar-day"><span>Monthly Event</span></td>
-      </tr>
+        <!--SIGN UP FORM-->
+        <div class="signUp">
+            <h3>SIGN UP FOR A CLASS</h3>
+            <form class="" action="signup_page.php" method="post">
+                First name: <input class="classElement" type="text" name="first" value="firstname"><br>
+                Last name: <input type="text" name="last" value="lastname">
+                <br><br>
+                E-mail: <input type="email" name="user_email">
+                <br><br>
+                Select a class
+                <select class="classNames" name="">
+                    <option value="yoga">A Night of Yoga</option>
+                    <option value="candles">Candles with Kids</option>
+                    <option value="soap">Fun with Soap</option>
+                    <option value="jewelry">Urban Jewels</option>
+                </select>
+                <br><br>
+                Enter the date of class:<br>
+                <input type="date" name="classDate" min="2019-01-02">
+                <br><br>
+                <input type="submit" name="" value="Submit">
+            </form>
 
-    </table>
+        </div>
+        <!--DIV FOR EVENTS HTML -->
 
 
-        <div class="">
+
+        <div class="calLogo">
+
 
         </div>
 
     </div>
 
 
-<!--SIGN UP FORM-->
-<div class="signUp">
-    <h3>SIGN UP FOR A CLASS</h3>
-    <form class="" action="signup_page.php" method="post">
-        First name: <input class="classElement" type="text" name="first" value="firstname"><br>
-        Last name: <input type="text" name="last" value="lastname">
-        <br><br>
-        E-mail: <input type="email" name="user_email">
-        <br><br>
-        Select a class
-        <select class="classNames" name="">
-            <option value="yoga">A Night of Yoga</option>
-            <option value="candles">Candles with Kids</option>
-            <option value="soap">Fun with Soap</option>
-            <option value="jewelry">Urban Jewels</option>
-        </select>
-        <br><br>
-        Enter the date of class:<br>
-        <input type="date" name="classDate" min="2019-01-02">
-        <br><br>
-        <input type="submit" name="" value="Submit">
-    </form>
 
-</div>
 <!--SCRIPT FOR DROPDOWN PANELS  -->
 <script type="text/javascript">
     $(document).ready(function() {
