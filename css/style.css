@@ -183,16 +183,6 @@ nav li a:hover {
   height: 200px;
 }
 
-.artPageImage {
-    background-image: url("..//img/classImage1.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    background-color: #31ADE8;
-    background-blend-mode: overlay;
-    width: 100%;
-    height: 400px;
-}
 #carousel .item{
     height:300px;
     background-repeat: no-repeat;
@@ -202,7 +192,7 @@ nav li a:hover {
 
 .message {
     text-align: center;
-    font-size: 50px;
+    font-size: 33px;
 }
 
 .CTA {
