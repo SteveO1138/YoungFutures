@@ -3,10 +3,13 @@
     <head>
         <meta charset="utf-8">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css">
          <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Rock+Salt" rel="stylesheet">
          <script src="https://code.jquery.com/jquery-3.3.1.min.js"
          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
          crossorigin="anonymous"> </script>
+         <script src="js/owl.carousel.min.js" charset="utf-8"></script>
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Young Futures: Our Art</title>
@@ -51,24 +54,38 @@
 
         <div class="wrapper">
             <div class="message"><h2>Art and Sole</h2></div>
-                <div class="owl-carousel owl-theme owl-loaded">
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage">
-                            <div class="owl-item"><img src="img/YF_ArtandSole_5.jpg" alt="Young Futures logo"/></div>
-                            <div class="owl-item"><img src="img/YF_ArtandSole_6.jpg" alt="Young Futures logo"/></div>
-                            <div class="owl-item"><img src="img/YF_ArtandSole_7.jpg" alt="Young Futures logo"/></div>
-                        </div>
-                    </div>
-                        <div class="owl-nav">
-                            <div class="owl-prev">prev</div>
-                            <div class="owl-next">next</div>
-                        </div>
-                            <div class="owl-dots">
-                                <div class="owl-dot active"><span></span></div>
-                                <div class="owl-dot"><span></span></div>
-                                <div class="owl-dot"><span></span></div>
-                            </div>
+
+                <div id="carousel" class="owl-carousel owl-theme">
+                    <div class="item" style="background-image:url('img/YF_ArtandSole_5.jpg')"></div>
+                    <div class="item" style="background-image:url('img/YF_ArtandSole_6.jpg')"></div>
+                    <div class="item" style="background-image:url('img/YF_ArtandSole_7.jpg')"></div>
                 </div>
+
+                <script type="text/javascript">
+                    $(function(){
+                        var artCarousel = $('#carousel');
+
+                        artCarousel.owlCarousel({
+                            center:true,
+                        	loop:true,
+                            margin:10,
+                            nav:true,
+                        	animateOut: 'fadeOut',
+                            responsive:{
+                                0:{
+                                    items:1
+                                },
+                                600:{
+                                    items:3
+                                },
+                                1000:{
+                                    items:5
+                                }
+                            }
+                        });
+
+                    });
+                </script>
 
         </div>
 
@@ -82,7 +99,3 @@
 
     </body>
 </html>
-
-<!-- from Owl Carousel instrucitons -->
-<script src="/node_modules/jquery/dist/jquery.js"></script>
-<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
