@@ -958,3 +958,30 @@ td:hover{
     font-size: 19px;
     margin-left: 12px;
 }
+
+
+/**************************** Media Query's********************************************/
+
+
+@media screen and (max-width:481px){
+    footer div{
+        width: 90%;
+        font-size: 10px;
+    }
+    footer .social {
+        float: left;
+        padding-right: 30px;
+        border: none;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+}
+@media (max-width:991px){
+
+}
+@media (max-width:1200px){
+
+}
