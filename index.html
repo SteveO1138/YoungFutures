@@ -3,12 +3,19 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Young Futures</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"> </script>
+    <script src="js/owl.carousel.min.js" charset="utf-8"></script>
+
 </head>
 <body>
     <header>
@@ -41,10 +48,49 @@
     </div>
 
 <!--- Carousel -->
-    <div class="Carousel">
+    <!-- <div class="Carousel">
         <div id="carousel-img1">
         </div>
+    </div> -->
+
+    <div id="homeCarousel" class="owl-carousel owl-theme">
+        <div class="item" style="background-image:url('img/YF_bracelets.png')">
+            1<br>
+            1<br>
+            1<br>
+            1<br>
+            1<br>
+            1<br>
+        </div>
+        <div class="item" style="background-image:url('img/YF_bracelets.png')">
+            2
+        </div>
     </div>
+
+    <script type="text/javascript">
+        $(function(){
+            var homeCarousel = $('#homeCarousel');
+
+            homeCarousel.owlCarousel({
+                center:true,
+                items: 1,
+                loop:true,
+                autoHeight: true,
+                margin:0,
+                nav:true,
+                animateOut: 'fadeOut'
+
+            });
+
+            // $('.customNextBtn').click(function() {
+            //     homeCarousel.trigger('next.owl.carousel');
+            // });
+            // $('.customPrevBtn').click(function() {
+            //     homeCarousel.trigger('prev.owl.carousel');
+            // });
+
+        });
+    </script>
 
 
 <!--- CTA boxes -->

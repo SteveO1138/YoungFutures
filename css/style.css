@@ -81,6 +81,7 @@ header {
   /* border-left: 2px solid black;
   border-right: 2px solid black; */
 }
+
 .innerLogo {
   float: none;
   width: 90%;
@@ -204,20 +205,16 @@ nav li a:hover {
   height: 200px;
 }
 
-.artPageImage {
-    background-image: url("..//img/classImage1.jpg");
+#carousel .item{
+    height:300px;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
-    background-color: #31ADE8;
-    background-blend-mode: overlay;
-    width: 100%;
-    height: 400px;
 }
 
 .message {
     text-align: center;
-    font-size: 50px;
+    font-size: 33px;
 }
 
 .CTA {
@@ -618,19 +615,14 @@ footer .info {
 /*
 Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
 
- .Carousel{
-    width: 80%;
- }
 
 /* carousel on main page */
- #carousel-img1{
-     background-image: url("..//img/YF_bracelets.png");
+ #homeCarousel .item{
      background-repeat: no-repeat;
      background-size: cover;
      background-color: #31ade8;
      background-blend-mode: overlay;
-     height: 600px;
-     width: 1500px;
+     /* height: 600px; */
      text-align: right;
      background-position: center;
  }
@@ -988,4 +980,31 @@ td:hover{
 #Event-key span{
     font-size: 19px;
     margin-left: 12px;
+}
+
+
+/**************************** Media Query's********************************************/
+
+
+@media screen and (max-width:481px){
+    footer div{
+        width: 90%;
+        font-size: 10px;
+    }
+    footer .social {
+        float: left;
+        padding-right: 30px;
+        border: none;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+}
+@media (max-width:991px){
+
+}
+@media (max-width:1200px){
+
 }
