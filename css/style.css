@@ -39,6 +39,10 @@ a:visited {
   text-decoration: none;
 }
 
+h1{
+    margin: 0;
+}
+
 /*-------------------------- header section --------------------------*/
 header {
   width: 100%;
@@ -174,13 +178,13 @@ nav li a:hover {
 /* Mission statement and other page text */
 
 .pageText {
-    background-color: #fc9502;
+    background-color: #fffx;
     font-size: 22px;
     padding: 10px;
 }
 
 .pageText p{
-    color: white;
+    color: #fc9502;
     width: 90%;
     padding-left: 10%;
 }
@@ -204,13 +208,6 @@ nav li a:hover {
   background-blend-mode: overlay;
   width: 100%;
   height: 200px;
-}
-
-#carousel .item{
-    height:300px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .message {
@@ -624,8 +621,11 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
      background-color: #31ade8;
      background-blend-mode: overlay;
      /* height: 600px; */
-     text-align: right;
+     text-align: center;
      background-position: center;
+     height: 500px;
+     color: #fff;
+     font-size: 32px;
  }
 
  /**
