@@ -43,10 +43,14 @@ a:visited {
 header {
   width: 100%;
   height: 240px;
-  /* margin: 42px 0px 0px 0px; */
-  background-color: #ffeed6;
+  margin: 75px 0px 0px 0px;
+  background-color: #fc9502;
   position: relative;
-  z-index: 30;
+  background-image: url("..//img/AlbanySkyline.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+  /* z-index: 30; */
 }
 
 .location {
@@ -65,6 +69,18 @@ header {
   width: 33%;
   height: auto;
   z-index: 40;
+  position: relative;
+
+}
+
+.innerLogo{
+    position: absolute;
+    top: -80px;
+
+}
+}
+  /* border-left: 2px solid black;
+  border-right: 2px solid black; */
 }
 
 .innerLogo {
@@ -80,11 +96,13 @@ header {
   overflow: hidden;
   opacity: 1;
 }
-.social {
+header .social {
   width: 33%;
   height: auto;
-  text-align: center;
+  text-align: right;
+  margin-left: 350px;
 }
+
 
 .social a:hover {
   border-bottom: 5px solid #fff;
@@ -134,10 +152,15 @@ nav li a {
   height: 42px;
   padding: 10px;
   color: #333;
+  -webkit-transition: color 800ms ease-out;
+  -moz-transition: color 800ms ease-out;
+  -o-transition: color 800ms ease-out;
+  transition: color 800ms ease-out;
 }
 nav li a:hover {
-  background-color: #333;
-  color: #fff;
+  /* background-color: #333; */
+  color: #e86200;
+  cursor: pointer;
 }
 
 .centeredText {
@@ -958,4 +981,87 @@ td:hover{
 #Event-key span{
     font-size: 19px;
     margin-left: 12px;
+}
+
+
+/**************************** Media Query's********************************************/
+
+
+@media screen and (max-width:481px){
+/* Footer Section */
+    footer div{
+        width: 100%;
+        font-size: 12px;
+    }
+    footer .social {
+        float: left;
+        width: 100%;
+        border-right: none;
+        padding-right: 0px;
+    }
+    footer .info {
+        float: right;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+/* Header Section */
+    header{
+        background-size: cover;
+    }
+    header div {
+        font-size: 12px;
+    }
+    header .social {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0;
+        font-size: 10px;
+        overflow: hidden;
+    }
+    .location h3 {
+        width: 100%;
+    }
+    .location {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .innerLogo {
+        position: absolute;
+        top: -150px;
+    }
+    .logo {
+        width: 100%;
+    }
+/* Nav Bar */
+    nav {
+        width: 100%;
+        height: auto;
+    }
+    nav li {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid black;
+    }
+    .innerNav {
+    width: 100%;
+    }
+    nav li :last-of-type{
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width:768px){
+
+}
+@media (max-width:991px){
+
+}
+@media (max-width:1200px){
+
 }
