@@ -39,10 +39,6 @@ a:visited {
   text-decoration: none;
 }
 
-h1{
-    margin: 0;
-}
-
 /*-------------------------- header section --------------------------*/
 header {
   width: 100%;
@@ -106,7 +102,6 @@ header .social {
   text-align: right;
   margin-left: 350px;
 }
-
 
 .social a:hover {
   border-bottom: 5px solid #fff;
@@ -178,17 +173,22 @@ nav li a:hover {
 /* Mission statement and other page text */
 
 .pageText {
-    background-color: #fffx;
+    background-color: #fff;
     font-size: 22px;
-    padding: 10px;
+    padding: 4% 10%;
 }
 
 .pageText p{
     color: #fc9502;
     width: 90%;
-    padding-left: 10%;
+    display: inline;
 }
-
+.pageText h1{
+    color: #fc9502;
+    width: 90%;
+    display: inline;
+    font-size: 32px;
+}
 
 
 .Aboutwrapper {
@@ -212,7 +212,11 @@ nav li a:hover {
 
 .message {
     text-align: center;
-    font-size: 33px;
+    font-size: 22px;
+    position: relative;
+    margin-top: 30%;
+    font-family: "Roboto Slab", serif;
+    background-color: #444;
 }
 
 .CTA {
