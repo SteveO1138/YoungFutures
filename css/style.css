@@ -307,6 +307,18 @@ nav li a:hover {
     border-radius: 5px;
     color:white;
     background-color:#FF9207;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.signup:hover{
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.signup:active{
+    background-color: #FF9207;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .Ename img{
