@@ -65,7 +65,7 @@ header {
 }
 
 .location h3{
-    width: 80%;
+    padding: 0px 96px;
     font-size: 120%;
 }
 
@@ -73,26 +73,17 @@ header {
   width: 33%;
   height: auto;
   z-index: 40;
-  position: relative;
-
-}
-
-.innerLogo{
-    position: absolute;
-    top: -80px;
-
-}
-}
-  /* border-left: 2px solid black;
-  border-right: 2px solid black; */
 }
 
 .innerLogo {
-  float: none;
+  /* float: none; */
   width: 90%;
   margin: 0 auto;
+  position: absolute;
+  top: -80px;
+
 }
-.logo img {
+.innerLogo img {
   display: block;
   width: 244px;
   height: auto;
@@ -101,13 +92,18 @@ header {
   opacity: 1;
 }
 header .social {
-  width: 33%;
-  height: auto;
-  text-align: right;
-  margin-left: 350px;
+    float: right;
+    width: 33%;
+    height: auto;
+    text-align: center;
+    padding: 12px;
+
+  /* margin-left: 350px; */
 }
-
-
+.socialInner {
+    width: 100%;
+    height: 72px;
+}
 .social a:hover {
   border-bottom: 5px solid #fff;
 }
@@ -445,6 +441,8 @@ nav li a:hover {
   -moz-transition: color 800ms ease-out;
   -o-transition: color 800ms ease-out;
   transition: color 800ms ease-out;
+  position: absolute;
+  bottom: -36px;
 }
 
 #CTARight p:hover {
@@ -828,7 +826,7 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
 /*--STYLES FOR CLASS DESCRIPTION DROPDOWN PANELS  */
 .accordion {
     /* float:none; */
-    width: 25%;
+    width: 40%;
     /* margin: 0 auto; */
     margin: 10px 20px;
 }
@@ -864,19 +862,47 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
     font-family: sans-serif;
 }
 .signUp {
-    width: 25%;
+    width: 50%;
     height: auto;
     margin: 10px 20px;
     padding: 10px;
     border: 1px solid #777;
+    border-radius: 5px;
+    color:white;
+    background-color:#FF9207;
 }
-.signUp h3 {
-    margin: 0 0 10px 0;
+.signUp h2 {
+    margin: 0 0 20px 0;
+}
+.textFormField {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+}
+.formLeft {
+    width:50%;
+    height: auto;
+}
+.formRight {
+    width:50%;
+    height: auto;
 }
 .classElement {
+    /* width: 200px; */
+    height: 20px;
     margin-bottom: 12px;
 }
-
+.buttonSubmit {
+    width:144px;
+    height:30px;
+    background-color:#31ADE8;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
 
  /*********************** Calendar for events page **************************/
 .events-calendar{
@@ -988,56 +1014,47 @@ td:hover{
 
 
 @media screen and (max-width:481px){
-/* Footer Section */
-    footer div{
-        width: 100%;
-        font-size: 12px;
-    }
-    footer .social {
-        float: left;
-        width: 100%;
-        border-right: none;
-        padding-right: 0px;
-    }
-    footer .info {
-        float: right;
-        width: 100%;
-        padding-left: 0px;
-    }
-
 /* Header Section */
     header{
         background-size: cover;
+        height: 300px;
     }
     header div {
         font-size: 12px;
     }
-    header .social {
+    .logo {
         width: 100%;
-        height: auto;
-        text-align: center;
-        margin: 0;
-        font-size: 10px;
-        overflow: hidden;
-    }
-    .location h3 {
-        width: 100%;
-    }
-    .location {
-        width: 100%;
-        text-align: center;
-        padding: 0px;
-    }
-    .logo img {
-        width: 100px;
+        position: relative;
     }
     .innerLogo {
+        /* height: 120px; */
         position: absolute;
         top: -150px;
     }
-    .logo {
-        width: 100%;
+    .innerLogo img {
+        width: 100px;
     }
+    header .social {
+        float:left;
+        width: 100%;
+        text-align: center;
+        /* margin: 0; */
+        font-size: 10px;
+        /* overflow: hidden; */
+    }
+
+    .location {
+        width: 100%;
+        height: 96px;
+        text-align: center;
+        padding: 0px;
+    }
+    .location h3 {
+        width: 100%;
+        padding: 0px 6px;
+    }
+
+
 /* Nav Bar */
     nav {
         width: 100%;
@@ -1054,6 +1071,23 @@ td:hover{
     nav li :last-of-type{
         border-bottom: none;
     }
+
+    /* Footer Section */
+        footer div{
+            width: 100%;
+            font-size: 12px;
+        }
+        footer.social {
+            float: left;
+            width: 100%;
+            border-right: none;
+            padding-right: 0px;
+        }
+        footer .info {
+            float: right;
+            width: 100%;
+            padding-left: 0px;
+        }
 }
 
 @media screen and (max-width:768px){
