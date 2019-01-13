@@ -47,7 +47,8 @@ header {
   position: relative;
   background-image: url("..//img/AlbanySkyline.png");
   background-repeat: no-repeat;
-  background-position:center;
+  background-position:bottom;
+  bottom: -20px;
   background-size: cover;
 
 }
@@ -229,8 +230,9 @@ nav li a:hover {
 .message {
     text-align: center;
     font-size: 22px;
-    position: relative;
-    margin-top: 30%;
+    position: absolute;
+    bottom:0;
+    height: 36px;
     font-family: "Roboto Slab", serif;
     background-color: #444;
 }
@@ -660,6 +662,7 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
      height: 500px;
      color: #fff;
      font-size: 32px;
+     position: relative;
  }
 
  /**
