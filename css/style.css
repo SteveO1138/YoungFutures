@@ -47,7 +47,8 @@ header {
   position: relative;
   background-image: url("..//img/AlbanySkyline.png");
   background-repeat: no-repeat;
-  background-position:center;
+  background-position:bottom;
+  bottom: -20px;
   background-size: cover;
 
 }
@@ -60,7 +61,7 @@ header {
 }
 
 .location h3{
-    width: 80%;
+    padding: 0px 96px;
     font-size: 120%;
 }
 
@@ -74,11 +75,14 @@ header {
 
 
 .innerLogo {
-  float: none;
+  /* float: none; */
   width: 90%;
   margin: 0 auto;
+  position: absolute;
+  top: -80px;
+
 }
-.logo img {
+.innerLogo img {
   display: block;
   width: 244px;
   height: auto;
@@ -207,8 +211,9 @@ nav li a:hover {
 .message {
     text-align: center;
     font-size: 22px;
-    position: relative;
-    margin-top: 30%;
+    position: absolute;
+    bottom:0;
+    height: 36px;
     font-family: "Roboto Slab", serif;
     background-color: #444;
 }
@@ -455,6 +460,8 @@ nav li a:hover {
   -moz-transition: color 800ms ease-out;
   -o-transition: color 800ms ease-out;
   transition: color 800ms ease-out;
+  position: absolute;
+  bottom: -36px;
 }
 
 #CTARight p:hover {
@@ -636,6 +643,7 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
      height: 500px;
      color: #fff;
      font-size: 32px;
+     position: relative;
  }
 
  /**
@@ -835,11 +843,14 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
   width: 100%;
 }
 
-/*--STYLES FOR CLASS DESCRIPTION DROPDOWN PANELS  */
+/*--STYLES FOR CLASS DESCRIPTION AND SIGN-UP FORM  */
+.classSignUp {
+    width: 80%;
+    margin: 0 10%;
+    background-color: #fff;
+}
 .accordion {
-    /* float:none; */
-    width: 25%;
-    /* margin: 0 auto; */
+    width: 40%;
     margin: 10px 20px;
 }
 .accordion-header {
@@ -873,27 +884,73 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
     line-height: 1.5em;
     font-family: sans-serif;
 }
+
 .signUp {
-    width: 25%;
+    width: 50%;
     height: auto;
     margin: 10px 20px;
     padding: 10px;
     border: 1px solid #777;
+    border-radius: 5px;
+    color: white;
+    background-color:#FF9207;
 }
-.signUp h3 {
-    margin: 0 0 10px 0;
-}
-.classElement {
-    margin-bottom: 12px;
+.signUp h1 {
+    margin: 6px 0;
 }
 
+input[type=text], input[type=email], input[type=date], select{
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+input:focus {
+  background-color: lightblue;
+}
+
+input[type=submit]{
+    width:100%;
+    height:30px;
+    margin: 8px 0;
+    background-color:#31ADE8;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 13px;
+  resize: none;
+}
+textarea:focus {
+  background-color: lightblue;
+}
  /*********************** Calendar for events page **************************/
 .events-calendar{
 list-style: none;
 width: 80%;
 font-family: "Roboto Slab";
-margin-left: 10%;
+margin: 0 10%;
 padding: 10px;
 background-color: white;
 }
@@ -905,9 +962,6 @@ background-color: white;
     width:400px;
     height:400px;
 }
-
-
-
 
 .month {
    padding: 70px 25px;
@@ -994,47 +1048,42 @@ td:hover{
 }
 
 
-/**************************** Media Query's********************************************/
+/**** Media Queries*********/
 
 
 @media screen and (max-width:481px){
-/* Footer Section */
-    footer div{
-        width: 100%;
-        font-size: 12px;
-    }
-    footer .social {
-        float: left;
-        width: 100%;
-        border-right: none;
-        padding-right: 0px;
-    }
-    footer .info {
-        float: right;
-        width: 100%;
-        padding-left: 0px;
-    }
-
 /* Header Section */
     header{
         background-size: cover;
+        height: 300px;
     }
     header div {
         font-size: 12px;
     }
+    .logo {
+        width: 100%;
+        position: relative;
+    }
+    .innerLogo {
+        /* height: 120px; */
+        position: absolute;
+        top: -150px;
+    }
+    .innerLogo img {
+        width: 100px;
+    }
     header .social {
+        float:left;
         width: 100%;
-        height: auto;
         text-align: center;
-        margin: 0;
+        /* margin: 0; */
         font-size: 10px;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
-    .location h3 {
-        width: 100%;
-    }
+
     .location {
         width: 100%;
+        height: 96px;
         text-align: center;
         padding: 0px;
     }
@@ -1051,7 +1100,10 @@ td:hover{
     }
     .logo {
         width: 100%;
+        padding: 0px 6px;
     }
+
+
 /* Nav Bar */
     nav {
         width: 100%;
@@ -1068,6 +1120,7 @@ td:hover{
     nav li :last-of-type{
         border-bottom: none;
     }
+<<<<<<< HEAD
 /* CTA */
     .CTA {
     width: 100%;
@@ -1144,6 +1197,32 @@ td:hover{
 
     }
 
+
+/* class descriptions and sign-up form */
+    .accordion {
+        width: 100%
+    }
+    .signUp {
+        width: 100%;
+    }
+
+
+    /* Footer Section */
+        footer div{
+            width: 100%;
+            font-size: 12px;
+        }
+        footer.social {
+            float: left;
+            width: 100%;
+            border-right: none;
+            padding-right: 0px;
+        }
+        footer .info {
+            float: right;
+            width: 100%;
+            padding-left: 0px;
+        }
 }
 
 @media screen and (max-width:768px){

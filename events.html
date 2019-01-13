@@ -96,8 +96,12 @@
           <tr id='Event-key'>
             <td colspan="7"><i class="fas fa-calendar-day"><span>Monthly Event</span></td>
           </tr>
-
         </table>
+</div>
+<!--END of EVENTS CALENDAR DIV -->
+
+<!--BEGIN DROPDOWNS CLASS DESCRIPTIONS  -->
+<div class="classSignUp">
         <div class="accordion">
             <!-- <div class="accordion-header">About Our Classes</div>
             <div class="accordion-content">
@@ -129,43 +133,31 @@
                 Jewelry making in our community dates back to as far as we can remember. This project explores beading including an experienced jewelry maker sharing the variations and techniques used in the art
             </div>
         </div>
-        <!--SIGN UP FORM-->
+<!-- BEGIN SIGN UP FORM-->
         <div class="signUp">
-            <h2>SIGN UP FOR A CLASS</h2>
+            <h1>SIGN UP FOR A CLASS</h1>
             <form class="textFormField" action="signup_page.php" method="post">
-                <div class="formLeft">
-                    First name: <input class="classElement" type="text" name="fname" value="firstname" size="30"><br>
-                    Last name: <input class="classElement" type="text" name="lname" value="lastname" size="30"><br>
-                    E-mail: <input class="classElement" type="email" name="email" value="email" size="30"><br>
-                </div>
-                <div class="formRight">
-                    Select a class
-                    <select class="classNames" name="classSelection">
+                    First name: <input type="text" name="fname" value="Firstname" ><br>
+                    Last name: <input type="text" name="lname" value="Lastname" ><br>
+                    E-mail: <input type="email" name="email" value="janedoe@example.com" ><br>
+                    Select a class:
+                    <select>
                         <option value="art">Art & Soul</option>
                         <option value="yoga">A Night of Yoga</option>
                         <option value="candles">Candles with Kids</option>
                         <option value="soap">Fun with Soap</option>
                         <option value="jewelry">Urban Jewels</option>
                     </select><br>
-                    Enter the date of class: <input class="classElement" type="date" name="classDate" min="2019-01-02">
+                    Enter the date of class:
+                    <input type="date" name="classDate" min="2019-01-02">
                     <br>
-                    <input class="buttonSubmit" type="submit" name="submitButton" value="Submit">
-                </div>
-
+                    <input type="submit" name="submitButton" value="Submit">
             </form>
-
         </div>
-        <!--DIV FOR EVENTS HTML -->
-
-
-
-
-
     </div>
+</div>
 
-
-
-<!--SCRIPT FOR DROPDOWN PANELS  -->
+<!--SCRIPT FOR ACCORDION  -->
 <script type="text/javascript">
     $(document).ready(function() {
         $(".accordion").on("click", ".accordion-header", function() {
