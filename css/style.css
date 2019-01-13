@@ -1039,10 +1039,14 @@ td:hover{
         padding: 0px;
     }
     .logo img {
-        width: 100px;
+        width: 100%;
+        position: absolute;
+        top: 205px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     .innerLogo {
-        position: absolute;
         top: -150px;
     }
     .logo {
@@ -1064,6 +1068,82 @@ td:hover{
     nav li :last-of-type{
         border-bottom: none;
     }
+/* CTA */
+    .CTA {
+    width: 100%;
+    margin-left: 0px;
+    }
+    #CTALeft {
+    width: 100%;
+    margin: auto;
+    }
+    #LeftTop{
+        Width:100%;
+        height:200px;
+    }
+    #LeftTop span{
+        text-align: center;
+        padding-top: 80px;
+        padding-right: 20px;
+    }
+    #leftBottom{
+        width: 100%
+    }
+
+    #leftBottom span{
+        text-align: center;
+        padding-top: 60px;
+        padding-right: 25px;
+    }
+    #CTACenter{
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+    }
+    #CTACenter p{
+        padding: 0px;
+    }
+    #CTARight{
+        height: 200px;
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+/* Donate */
+    .innerDonate{
+        height: 125px;
+        margin: 10px;
+        text-align: center;
+}
+    }
+    .innerDonate h1{
+        font-size: 4em;
+        margin: 10px;
+    }
+    #EventWrapper{
+        text-align: center;
+    }
+    .Event{
+        width: 100%;
+    }
+    .signup{
+        width: 100%;
+    }
+    #EventWrapper ul li div{
+        width: 25%;
+    }
+
+/* Carousel */
+    #homeCarousel .item{
+        height: 240px;
+    }
+    .message{
+        font-size: 16px;
+        margin-top: 49%;
+
+    }
+
 }
 
 @media screen and (max-width:768px){
