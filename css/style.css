@@ -31,7 +31,7 @@ h5 {
 img {
   width: 100%;
   height: auto;
-  opacity: .8;
+  /* opacity: .8; */
 }
 
 a:link,
@@ -39,22 +39,17 @@ a:visited {
   text-decoration: none;
 }
 
-h1{
-    margin: 0;
-}
-
 /*-------------------------- header section --------------------------*/
 header {
   width: 100%;
-  height: 240px;
-  margin: 75px 0px 0px 0px;
+  height: 450px;
   background-color: #fc9502;
   position: relative;
   background-image: url("..//img/AlbanySkyline.png");
   background-repeat: no-repeat;
   background-position:center;
-  background-size: contain;
-  /* z-index: 30; */
+  background-size: cover;
+
 }
 
 .location {
@@ -73,7 +68,14 @@ header {
   width: 33%;
   height: auto;
   z-index: 40;
+<<<<<<< HEAD
 }
+=======
+  position: relative;
+
+}
+
+>>>>>>> origin
 
 .innerLogo {
   /* float: none; */
@@ -92,6 +94,7 @@ header {
   opacity: 1;
 }
 header .social {
+<<<<<<< HEAD
     float: right;
     width: 33%;
     height: auto;
@@ -104,6 +107,14 @@ header .social {
     width: 100%;
     height: 72px;
 }
+=======
+  width: 33%;
+  height: auto;
+  text-align: right;
+  margin-left: 350px;
+}
+
+>>>>>>> origin
 .social a:hover {
   border-bottom: 5px solid #fff;
 }
@@ -174,17 +185,22 @@ nav li a:hover {
 /* Mission statement and other page text */
 
 .pageText {
-    background-color: #fffx;
+    background-color: #fff;
     font-size: 22px;
-    padding: 10px;
+    padding: 4% 10%;
 }
 
 .pageText p{
     color: #fc9502;
     width: 90%;
-    padding-left: 10%;
+    display: inline;
 }
-
+.pageText h1{
+    color: #fc9502;
+    width: 90%;
+    display: inline;
+    font-size: 32px;
+}
 
 
 .Aboutwrapper {
@@ -205,18 +221,26 @@ nav li a:hover {
   width: 100%;
   height: 200px;
 }
+.aboutImage h1{
+    font-size: 5em;
+    margin-top: 200px;
+}
 
 .message {
     text-align: center;
-    font-size: 33px;
+    font-size: 22px;
+    position: relative;
+    margin-top: 30%;
+    font-family: "Roboto Slab", serif;
+    background-color: #444;
 }
 
 .CTA {
   display: block;
   float: left;
-  max-width: 85%;
-  padding: 10px;
-  margin-left: 10%;
+  max-width:1230px;
+  padding:10px;
+  margin-left:10%;
 }
 
 .CTAChild {
@@ -235,8 +259,8 @@ nav li a:hover {
     background-size: cover;
     background-color: #31ADE8;
     background-blend-mode: overlay;
-    width: 75%;
-    margin-left:10%;
+    width: 100%;
+
     height: 400px;
     text-align: center;
     color: #fff;
@@ -305,6 +329,18 @@ nav li a:hover {
     border-radius: 5px;
     color:white;
     background-color:#FF9207;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.signup:hover{
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.signup:active{
+    background-color: #FF9207;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .Ename img{
@@ -823,11 +859,14 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
   width: 100%;
 }
 
-/*--STYLES FOR CLASS DESCRIPTION DROPDOWN PANELS  */
+/*--STYLES FOR CLASS DESCRIPTION AND SIGN-UP FORM  */
+.classSignUp {
+    width: 80%;
+    margin: 0 10%;
+    background-color: #fff;
+}
 .accordion {
-    /* float:none; */
     width: 40%;
-    /* margin: 0 auto; */
     margin: 10px 20px;
 }
 .accordion-header {
@@ -861,6 +900,7 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
     line-height: 1.5em;
     font-family: sans-serif;
 }
+
 .signUp {
     width: 50%;
     height: auto;
@@ -868,33 +908,31 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
     padding: 10px;
     border: 1px solid #777;
     border-radius: 5px;
-    color:white;
+    color: white;
     background-color:#FF9207;
 }
-.signUp h2 {
-    margin: 0 0 20px 0;
+.signUp h1 {
+    margin: 6px 0;
 }
-.textFormField {
+
+input[type=text], input[type=email], input[type=date], select{
     width: 100%;
-    height: auto;
-    font-size: 20px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-.formLeft {
-    width:50%;
-    height: auto;
+
+input:focus {
+  background-color: lightblue;
 }
-.formRight {
-    width:50%;
-    height: auto;
-}
-.classElement {
-    /* width: 200px; */
-    height: 20px;
-    margin-bottom: 12px;
-}
-.buttonSubmit {
-    width:144px;
+
+input[type=submit]{
+    width:100%;
     height:30px;
+    margin: 8px 0;
     background-color:#31ADE8;
     border: 1px solid #fff;
     border-radius: 25px;
@@ -902,14 +940,33 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
 }
 
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 13px;
+  resize: none;
+}
+textarea:focus {
+  background-color: lightblue;
+}
  /*********************** Calendar for events page **************************/
 .events-calendar{
 list-style: none;
 width: 80%;
 font-family: "Roboto Slab";
-margin-left: 10%;
+margin: 0 10%;
 padding: 10px;
 background-color: white;
 }
@@ -921,9 +978,6 @@ background-color: white;
     width:400px;
     height:400px;
 }
-
-
-
 
 .month {
    padding: 70px 25px;
@@ -1010,7 +1064,7 @@ td:hover{
 }
 
 
-/**************************** Media Query's********************************************/
+/**** Media Queries*********/
 
 
 @media screen and (max-width:481px){
@@ -1071,6 +1125,15 @@ td:hover{
     nav li :last-of-type{
         border-bottom: none;
     }
+
+/* class descriptions and sign-up form */
+    .accordion {
+        width: 100%
+    }
+    .signUp {
+        width: 100%;
+    }
+
 
     /* Footer Section */
         footer div{
