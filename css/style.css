@@ -185,6 +185,11 @@ nav li a:hover {
   background-color: #31ade8;
   background-image: url("..//img/creampaper.png");
 }
+.wrapper {
+    float: none;
+    width: 80%;
+    margin: 0px auto;
+}
 #wrapNoBkgrd {
   background-color: inherit;
   background-image: none;
@@ -835,11 +840,14 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
   width: 100%;
 }
 
+.classDescriptions {
+    background-color: #fff;
+    width: 49%;
+    margin: 10px 5px;
+}
 /*--STYLES FOR CLASS DESCRIPTION DROPDOWN PANELS  */
 .accordion {
-    /* float:none; */
-    width: 25%;
-    /* margin: 0 auto; */
+    width: auto;
     margin: 10px 20px;
 }
 .accordion-header {
@@ -873,15 +881,28 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
     line-height: 1.5em;
     font-family: sans-serif;
 }
+
 .signUp {
-    width: 25%;
+    width: 49%;
     height: auto;
-    margin: 10px 20px;
+    margin: 10px 5px;
     padding: 10px;
     border: 1px solid #777;
+    border-radius: 5px;
+    color:white;
+    background-color:#FF9207;
+}
+.signUp h2 {
+    margin: 0 0 20px 0;
 }
 .signUp h3 {
     margin: 0 0 10px 0;
+}
+
+.textFormField {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
 }
 .classElement {
     margin-bottom: 12px;
@@ -891,9 +912,8 @@ Instructions: https://github.com/OwlCarousel2/OwlCarousel2 */
  /*********************** Calendar for events page **************************/
 .events-calendar{
 list-style: none;
-width: 80%;
+width: 100%;
 font-family: "Roboto Slab";
-margin-left: 10%;
 padding: 10px;
 background-color: white;
 }
